@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 23px;
+    margin-bottom: 10px;
+    background-color: #24252A;
+    align-items: center;
+}
+
+#logo {
+    margin: 5px
+}
+
+#links a,
+#userNav a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    margin-right: 5px;
+}
+
+#links a:hover {
+    color: skyblue;
+}
+
+#userNav a:hover {
+    color: skyblue;
+}
+
+.form-signin,
+.form-register {
+    width: 300px;
+    margin: auto;
+}
+
+#login,
+#register {
+    margin-top: 10%;
+}
+
+#loginBtn,
+#registerBtn {
+    margin-top: 12px;
+}
+
+#countiresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#detailsContainerLeft,
+#detailsContainerRight {
+    display: flex;
+    flex-direction: column;
+}
+
+#forecastContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#countryForecastContainer {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+#favouritesContainer {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#search,
+#searchForecast {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    transition: border-color 0.3s ease-in-out;
+    margin: 20px;
+}
+
+#search:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+#searchForecast:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#forecastSearchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forecastTable {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 20px;
+    border: 1px black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid;
+}
+
+.forecastTable-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forecastTable-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.forecastTable-body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.forecastBox {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.forecastBox .time {
+    font-size: 0.8rem;
+    color: #777777;
+}
+
+.forecastBox .degrees {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+#forecastContainer.hidden {
+    display: none;
+}
+
+#countryFlag {
+    margin-left: 15px;
+}
+
+#wheatherForNextSixHours {
+    margin: 10px;
+    text-align: center;
+}
+
+.weather-image {
+    margin-left: 20px;
+}
